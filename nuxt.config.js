@@ -13,7 +13,7 @@ module.exports = {
       },
       {
         name: 'author',
-        content: '王昌祖'
+        content: '胡胜州'
       },
       {
         hid: 'description',
@@ -24,7 +24,7 @@ module.exports = {
     link: [{
       rel: 'icon',
       type: 'image/x-icon',
-      href: '/favicon.ico'
+      href: '/123.ico'
     }]
   },
   /*
