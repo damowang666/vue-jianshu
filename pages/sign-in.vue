@@ -11,9 +11,9 @@
           <div class="title">
               <h4>
                   <nuxt-link class="active" to="/sign-in">
-                    登陆
+                    登录
                   </nuxt-link>
-                    ·
+                  <b>·</b>
                   <nuxt-link to="/sign-up">
                     注册
                   </nuxt-link>
@@ -23,31 +23,37 @@
           <!-- form表单 -->
           <div class="js-form">
               <form method="post">
-                    <input type="text" class="input-prepend" placeholder="手机号或邮箱">
+                    <div class="input-prepend">
+                        <input type="text" placeholder="手机号或邮箱">
                     <i class="fa fa-user"></i>
-                    <input type="text" class="input-prepend" placeholder="密码">
+                    </div>
+                    <div class="input-prepend">
+                        <input type="text" placeholder="密码">
                     <i class="fa fa-lock"></i>
-                    <input type="checkbox">
-                    <span>记住我</span>
-                    <nuxt-link class="help" to="/">登陆遇到问题?</nuxt-link>
-                    <input type="button" class="btn btn-primary" value="登陆">
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">记住我</label>
+                    </div>
+                    <nuxt-link class="help" to="/">登录遇到问题?</nuxt-link>
+                    <button>登录</button>
               </form>
           </div>
           <!-- 第三方的登陆 -->
           <div class="more-sign">
-              <p class="">社交账号登陆</p>
+              <p class="">社交账号登录</p>
               <ul>
-                  <li>
+                  <li class="weixin">
                       <nuxt-link to="/">
                         <i class="fa fa-weixin"></i>
                       </nuxt-link>
                   </li>
-                  <li>
+                  <li class="weibo">
                       <nuxt-link to="/">
                         <i class="fa fa-weibo"></i>
                       </nuxt-link>
                   </li>
-                  <li>
+                  <li class="qq">
                       <nuxt-link to="/">
                         <i class="fa fa-qq"></i>
                       </nuxt-link>
@@ -65,10 +71,10 @@ export default {
   layout: "sign",
   // 设置页面的标题以及描述，关键字等元信息
   head: {
-    title: "登陆-简书",
+    title: "登录-简书",
     meta: [
-      { name: "keywords", content: "登陆页面" },
-      { name: "description", content: "登陆简书" },
+      { name: "keywords", content: "登录页面" },
+      { name: "description", content: "登录简书" },
       { name: "author", content: "胡胜州" }
     ]
   },
